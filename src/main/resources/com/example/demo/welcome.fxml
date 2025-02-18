@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.cell.CheckBoxListCell?>
+<VBox prefHeight="800.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.WelcomeController">
+    <children>
+        <Label text="Please enter you credentials:" fx:id="lblWelcome"/>
+
+        <HBox>
+            <Label text="Name: " />
+            <TextField fx:id="txtName"/>
+        </HBox>
+
+        <HBox>
+            <Label text="Password: " />
+            <PasswordField fx:id="txtPassword"/>
+        </HBox>
+
+        <HBox maxWidth="Infinity">
+            <Label text="Availability:"/>
+            <CheckBox text="1"/>
+            <CheckBox text="2"/>
+            <CheckBox text="3"/>
+        </HBox>
+
+        <Button text="Login" fx:id="btnLogin" onAction= "#onButtonClicked"/>
+
+    </children>
+</VBox>
