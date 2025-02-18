@@ -13,7 +13,7 @@ public class ShelterForm extends Application {
     public void start (Stage stage) {
 
 //1. Text reason for shelter
-        TextField txtReason = new TextField();
+        TextArea txtReason = new TextArea();
         Label lblReason = new Label("Please explain your situation: ");
 
         HBox reasonPane = new HBox(5);
@@ -103,7 +103,7 @@ public class ShelterForm extends Application {
         layout.getChildren().add(continueButton);
 
 // create pop-up
-        Scene scene = new Scene (layout, 600, 300);
+        Scene scene = new Scene (layout, 700, 450);
         stage.setTitle("Shelter Appointment");
         stage.setScene(scene);
         stage.show();
