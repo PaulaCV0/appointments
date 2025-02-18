@@ -103,7 +103,7 @@ public class ShelterForm extends Application {
         layout.getChildren().add(continueButton);
 
 // create pop-up
-        Scene scene = new Scene (layout, 700, 450);
+        Scene scene = new Scene (layout, 680, 450);
         stage.setTitle("Shelter Appointment");
         stage.setScene(scene);
         stage.show();
